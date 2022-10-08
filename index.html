@@ -3,13 +3,17 @@
     <head>
         <title>Jokenpô</title>
         <meta charset=UTF-8>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilo/style.css">
         <link rel="shortcut icon" href="imagens/logo.webp" type="image/x-icon">
+        <script src="javascript/script.js" defer></script>
     </head>
     <body>
         <header>
-            <img src="imagens/logo.webp"><h1>Pedra, Papel ou Tesoura</h1>
-            <h2>Tente ganhar do computador! Quem fizer mais pontos ganha.</h2>
+            <img src="imagens/logo.webp" class="logo1">
+            <h1>Pedra, Papel ou Tesoura</h1>
+            <h2>Vamos jogar Jokenpô!! Quem leva a melhor em 5 jogadas?</h2>
         </header>
         <div class="score">
             <h1>Você</h1>
@@ -17,13 +21,15 @@
             <h1>Computador</h1>
             <h1 id="computer">&#127987</h1>
         </div>
-        <button id="start">Iniciar!</button>
-        <p></p>
-        <div class="button-container">
-            <button id="Rock">&#9994</button>
-            <button id="Paper">&#9995</button>
-            <button id="Scissors">&#9996</button>
+        <div class="interativo">
+            <button id="start">Iniciar!</button>
+            <p></p>
+            <div id="result"></div>
+            <div class="button-container">
+                <button id="pedra"><img src="imagens/Pedra.png" alt=""></button>
+                <button id="papel"><img src="imagens/Papel.png" alt=""></button>
+                <button id="tesoura"><img src="imagens/Tesoura.png" alt=""></button>
+            </div>
         </div>
-        <div id="result"></div>
     </body>
 </html>
